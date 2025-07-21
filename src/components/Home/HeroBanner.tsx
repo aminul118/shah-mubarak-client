@@ -1,7 +1,6 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
+import HeroText from "./HeroText";
 
 const partners = [
   { name: "CONSULTICA", color: "text-orange-400 italic" },
@@ -14,13 +13,7 @@ export default function HeroBanner() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="z-10 relative">
-          <span className="inline-block bg-white text-black text-xs font-semibold px-3 py-1 rounded-full mb-4">
-            Consultia Welcomes You
-          </span>
-
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-            Expert Guidance to <br /> Transform Your Business
-          </h1>
+          <HeroText />
 
           <p className="text-gray-300 mb-8 max-w-md">
             Ut varius tincidunt libero. Curabitur at lacus ac velit ornare
