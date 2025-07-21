@@ -1,0 +1,98 @@
+"use client";
+
+import { Menu, X } from "lucide-react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
+
+const navItems = [
+  {
+    title: "About",
+    href: "#about",
+  },
+  {
+    title: "Challenges",
+    href: "#challenges",
+  },
+  {
+    title: "Activities",
+    href: "#activities",
+  },
+  {
+    title: "Features",
+    href: "#features",
+  },
+  {
+    title: "Team",
+    href: "#team",
+  },
+  {
+    title: "Roadmap",
+    href: "#roadmap",
+  },
+];
+
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <nav className="w-full px-4 md:px-10 py-4 bg-[#050B16] text-white flex items-center justify-between sticky top-0 z-50">
+      {/* Left: Logo */}
+      <div className="flex items-center space-x-2">
+        <div className="bg-green-600 p-2 rounded-xl"></div>
+        <span className="text-green-500 font-semibold text-xl">
+          Shah Mubarak
+        </span>
+      </div>
+
+      {/* Middle: Nav Links (Desktop) */}
+      <ul className="hidden md:flex space-x-6 text-sm font-medium text-gray-300">
+        {navItems.map(({ title, href }) => (
+          <li key={title}>
+            <Link href={href} className="hover:text-white transition-colors">
+              {title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      {/* Right: Button (Desktop) */}
+      <div className="hidden md:block">
+        <Button className="bg-green-600 hover:bg-green-700 text-white font-semibold">
+          Invest Now
+        </Button>
+      </div>
+
+      {/* Mobile Menu Icon */}
+      <div className="md:hidden">
+        <button onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="absolute top-16 left-0 w-full bg-[#050B16] text-white flex flex-col items-center space-y-4 py-4 md:hidden z-40 shadow-md">
+          {navItems.map(({ title, href }) => (
+            <Link
+              key={title}
+              href={href}
+              className="hover:text-green-400 transition-colors"
+              onClick={() => setMenuOpen(false)}
+            >
+              {title}
+            </Link>
+          ))}
+          <Button
+            className="bg-green-600 hover:bg-green-700 text-white font-semibold"
+            onClick={() => setMenuOpen(false)}
+          >
+            Invest Now
+          </Button>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;
