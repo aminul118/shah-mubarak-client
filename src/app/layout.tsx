@@ -3,6 +3,7 @@ import "./globals.css";
 import { Children } from "@/types";
 import { poppins } from "@/lib/fonts";
 import AosProvider from "@/providers/AosProvider";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,6 +15,7 @@ const MainLayout = ({ children }: Children) => {
     <html lang="en">
       <body className={poppins.className}>
         <AosProvider>{children}</AosProvider>
+        <Toaster position="top-center" expand={false} />
       </body>
     </html>
   );

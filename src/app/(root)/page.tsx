@@ -1,3 +1,4 @@
+import ContactUs from "@/components/ContactUs/ContactUs";
 import FAQ from "@/components/Home/FAQ";
 import HeroBanner from "@/components/Home/HeroBanner";
 import ServiceCards from "@/components/Home/ServicesCards";
@@ -15,6 +16,7 @@ const HomePage = () => {
       <ServiceCards />
       <StatsSection />
       <FAQ />
+      <ContactUs />
     </>
   );
 };
