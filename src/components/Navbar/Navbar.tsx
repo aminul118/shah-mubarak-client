@@ -8,20 +8,20 @@ import { useState } from "react";
 const navItems = [
   {
     title: "Features",
-    href: "#features",
+    href: "/#features",
   },
   {
     title: "About",
-    href: "#about",
+    href: "/#about",
   },
 
   {
     title: "Activities",
-    href: "#activities",
+    href: "/#activities",
   },
   {
     title: "Team",
-    href: "#team",
+    href: "/#team",
   },
   {
     title: "Blogs",
