@@ -14,7 +14,7 @@ const ServiceCards = () => {
           <Link
             href={service.slug}
             key={index}
-            className=" p-6 rounded-2xl shadow-xl"
+            className=" p-6 rounded-2xl shadow-xl border"
           >
             <h3 className="text-xl font-semibold text-primary">
               {service.title}

@@ -1,26 +1,44 @@
 export const faqData = [
   {
-    value: "item-1",
-    question: "Product Information",
+    value: "about",
+    question: "Who is Shah Mubaruk?",
     answers: [
-      "Our flagship product combines cutting-edge technology with sleek design. Built with premium materials, it offers unparalleled performance and reliability.",
-      "Key features include advanced processing capabilities, and an intuitive user interface designed for both beginners and experts.",
+      "Shah Mubaruk is a visionary business consultant dedicated to helping entrepreneurs and organizations grow. With a focus on innovation and strategic guidance, Shah Mubaruk Business Consulting offers personalized solutions in areas like startup support, financial analysis, and business development.",
     ],
   },
   {
-    value: "item-2",
-    question: "Shipping Details",
+    value: "services",
+    question: "What services does Shah Mubaruk Business Consulting provide?",
     answers: [
-      "We offer worldwide shipping through trusted courier partners. Standard delivery takes 3-5 business days, while express shipping ensures delivery within 1-2 business days.",
-      "All orders are carefully packaged and fully insured. Track your shipment in real-time through our dedicated tracking portal.",
+      "Our services include Investment Planning, Financial Analysis, Oriented Development, Startup Support, Company Formation (including US Formation for Non-US Persons), Fundraising, Marketing Strategy, and more. Each service is tailored to meet the unique needs of our clients.",
     ],
   },
   {
-    value: "item-3",
-    question: "Return Policy",
+    value: "why-choose",
+    question: "Why should I choose Shah Mubaruk Business Consulting?",
     answers: [
-      "We stand behind our products with a comprehensive 30-day return policy. If you're not completely satisfied, simply return the item in its original condition.",
-      "Our hassle-free return process includes free return shipping and full refunds processed within 48 hours of receiving the returned item.",
+      "We offer industry-specific expertise, innovative thinking, a proven track record, and a client-centric approach. Our global perspective and personalized solutions ensure your business receives the strategic support it needs to thrive.",
+    ],
+  },
+  {
+    value: "investment-planning",
+    question: "What is Investment Planning?",
+    answers: [
+      "Investment Planning helps you grow and protect your wealth through tailored strategies. We assess your goals, risk tolerance, and financial landscape to create a personalized plan that supports long-term financial success.",
+    ],
+  },
+  {
+    value: "startup-support",
+    question: "What support do you offer for startups?",
+    answers: [
+      "We guide startups through key stages such as business planning, market entry, financial structuring, and operational setup. Our goal is to lay a strong foundation and accelerate growth for new ventures.",
+    ],
+  },
+  {
+    value: "us-formation",
+    question: "Can Shah Mubaruk help with US company formation?",
+    answers: [
+      "Yes. We specialize in US company formation for non-US persons, including registration, legal compliance, and financial tools such as bank accounts, PayPal, and Stripe. Our turnkey solution makes entering the US market seamless and strategic.",
     ],
   },
 ];
