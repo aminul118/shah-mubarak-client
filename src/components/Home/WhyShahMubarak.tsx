@@ -1,6 +1,7 @@
 import React from "react";
 import { RiSecurePaymentLine, RiBankLine } from "react-icons/ri";
 import { TbLicense } from "react-icons/tb";
+import SectionContainer from "../ui/SectionContainer";
 
 const features = [
   {
@@ -27,7 +28,10 @@ const features = [
 
 const WhyShahMubarak = () => {
   return (
-    <div className="relative bg-[url('/background/building.png')] bg-local md:bg-fixed bg-center bg-cover h-auto min-h-[550px] flex items-center justify-center py-16 px-4">
+    <SectionContainer
+      id="activities"
+      className="relative bg-[url('/background/building.png')] bg-local md:bg-fixed bg-center bg-cover h-auto min-h-[550px] flex items-center justify-center py-16 px-4"
+    >
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/70"></div>
 
@@ -55,7 +59,7 @@ const WhyShahMubarak = () => {
           ))}
         </div>
       </div>
-    </div>
+    </SectionContainer>
   );
 };
 

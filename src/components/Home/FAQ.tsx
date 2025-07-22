@@ -29,10 +29,12 @@ const FAQ = () => {
 
         {/* Accordion Content */}
         <div className="max-w-xl w-full text-primary">
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="space-y-4 ">
             {faqData.map((item) => (
               <AccordionItem key={item.value} value={item.value}>
-                <AccordionTrigger>{item.question}</AccordionTrigger>
+                <AccordionTrigger className="hover:cursor-pointer">
+                  {item.question}
+                </AccordionTrigger>
                 <AccordionContent>{item.answers}</AccordionContent>
               </AccordionItem>
             ))}
