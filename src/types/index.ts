@@ -5,7 +5,7 @@ export type Children = {
 };
 
 export type Params = {
-  params: Promise<{ id: string }>;
+  params: Promise<{ slug: string }>;
 };
 
 export type MetaProps = {
