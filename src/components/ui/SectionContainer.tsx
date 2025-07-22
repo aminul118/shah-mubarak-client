@@ -1,7 +1,7 @@
-import { ChildrenType } from "@/app/layout";
+import { Children } from "@/types";
 import React from "react";
 
-type classNameProps = ChildrenType & {
+type classNameProps = Children & {
   className?: string;
   backgroundColor?: string;
 };

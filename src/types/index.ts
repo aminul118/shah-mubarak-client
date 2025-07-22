@@ -1,8 +1,8 @@
 import React from "react";
 
-export interface IChildren {
+export type Children = {
   children: React.ReactNode;
-}
+};
 
 export type Params = {
   params: Promise<{ id: string }>;

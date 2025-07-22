@@ -3,9 +3,9 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { IChildren } from "@/types";
+import { Children } from "@/types";
 
-const AosProvider = ({ children }: IChildren) => {
+const AosProvider = ({ children }: Children) => {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);

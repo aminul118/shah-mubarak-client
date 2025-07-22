@@ -1,8 +1,8 @@
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
-import { IChildren } from "@/types";
+import { Children } from "@/types";
 
-const RootLayout = ({ children }: IChildren) => {
+const RootLayout = ({ children }: Children) => {
   return (
     <div>
       <Navbar />
