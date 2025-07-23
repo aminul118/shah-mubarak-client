@@ -17,9 +17,10 @@ export default function HeroBanner() {
           <HeroText />
 
           <p className="text-gray-300 mb-8 max-w-md">
-            Ut varius tincidunt libero. Curabitur at lacus ac velit ornare
-            lobortis. Phasellus dolor. Vestibulum ante ipsum primis in faucibus
-            orci luctus et.
+            Business Consulting stands as a trusted name in strategic growth and
+            innovation. From startup guidance to international expansion, we
+            provide tailored solutions that empower entrepreneurs and businesses
+            to thrive in today’s dynamic market.
           </p>
 
           <div className="flex flex-wrap gap-4">
