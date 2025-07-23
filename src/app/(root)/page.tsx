@@ -25,7 +25,6 @@ const HomePage = () => {
   return (
     <>
       <HeroBanner />
-      {/* <ConsultingOfferings /> */}
       <WhatWeDo />
       <WhyShahMubarak />
       <ServiceCards />

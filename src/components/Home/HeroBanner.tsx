@@ -24,7 +24,7 @@ export default function HeroBanner() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <Link href="#">
+            <Link href="/consultation">
               <Button>Schedule A Consultation</Button>
             </Link>
             <Link href="/#contact">
