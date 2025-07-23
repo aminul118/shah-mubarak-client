@@ -1,4 +1,5 @@
 import ContactUs from "@/components/ContactUs/ContactUs";
+import About from "@/components/Home/About";
 import FAQ from "@/components/Home/FAQ";
 import HeroBanner from "@/components/Home/HeroBanner";
 import ServiceCards from "@/components/Home/ServicesCards";
@@ -26,6 +27,7 @@ const HomePage = () => {
     <>
       <HeroBanner />
       <WhatWeDo />
+      <About />
       <WhyShahMubarak />
       <ServiceCards />
       <StatsSection />

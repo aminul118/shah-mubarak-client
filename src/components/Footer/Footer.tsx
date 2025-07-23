@@ -79,8 +79,9 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-[#2D3E50] text-muted-foreground text-xs px-6 py-6  mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <p>
-          {new Date().getFullYear()} TabEdge. All rights reserved. Investment
-          opportunities subject to qualification and regulatory approval.
+          {new Date().getFullYear()} Shah Mubarak. All rights reserved.
+          Investment opportunities subject to qualification and regulatory
+          approval.
         </p>
         <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4">
           <div className="flex items-center gap-1">

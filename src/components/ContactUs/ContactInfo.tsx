@@ -2,12 +2,12 @@ import React from "react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 
 const contactDetails = [
-  { id: 1, icon: FaPhone, text: "+1 302 946 0678" },
-  { id: 2, icon: FaEnvelope, text: "contact@shahmubarak.com" },
+  { id: 1, icon: FaPhone, text: "+880 1711 7812 32" },
+  { id: 2, icon: FaEnvelope, text: "info@shahmubarak.com" },
   {
     id: 3,
     icon: FaMapMarkerAlt,
-    text: "2261 Market Street STE 5926, San Francisco, CA, United State, 94114",
+    text: "744/4  pirerbagh, 60 feet road , mirpur dhaka",
   },
   { id: 4, icon: FaClock, text: "Mon - Sat : 9:00 AM - 6:00 PM" },
 ];
