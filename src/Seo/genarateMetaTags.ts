@@ -1,13 +1,13 @@
 import { MetaProps } from "@/types";
 import { Metadata } from "next";
 
-const baseUrl = "https://www.a1-lifts.com";
+const baseUrl = "https://www.shahmubaruk.com";
 
 export const generateMetaTags = ({
   title,
   description,
   keywords,
-  image = "/assets/screenshots/hero.png",
+  image = "./ss/hero-bg.png",
   path = "",
 }: MetaProps): Metadata => {
   return {
@@ -15,25 +15,25 @@ export const generateMetaTags = ({
     title,
     description,
     keywords,
-    category: "Commercial & Industrial Equipment Supplier",
+    category: "Investor",
     openGraph: {
       type: "website",
       url: `${baseUrl}/${path}`,
       title: title,
       description: description,
-      siteName: "A1 Lifts and Engineering",
+      siteName: "Shah Mubarak",
       images: [{ url: image, alt: title }],
     },
     robots: { index: true, follow: true },
     twitter: {
       card: "summary_large_image",
-      site: "@a1lifts",
-      creator: "@a1liftsandengineering",
+      site: "@shahmubarak",
+      creator: "@shahmubarak",
       title,
       description,
       images: image,
     },
-    applicationName: "A1 Lifts and Engineering",
+    applicationName: "Shah Mubarak",
     alternates: {
       canonical: `${baseUrl}/${path}`,
       languages: {
@@ -44,7 +44,7 @@ export const generateMetaTags = ({
     manifest: "/manifest.webmanifest",
     authors: [
       {
-        name: "Md. Abdul Motaleb",
+        name: "Shah Mubarak",
         // url: "http://www.shrlbd.com/team/675663806e9379ed3c2a6f99",
       },
     ],

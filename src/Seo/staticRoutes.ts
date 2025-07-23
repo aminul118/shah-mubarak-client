@@ -6,4 +6,9 @@ export const staticRoutes: Routes[] = [
     changeFrequency: "monthly",
     priority: 1.0,
   },
+  {
+    url: "blogs",
+    changeFrequency: "monthly",
+    priority: 1.0,
+  },
 ];
