@@ -7,16 +7,17 @@ import SectionContainer from "../ui/SectionContainer";
 
 const ServiceCards = () => {
   return (
-    <SectionContainer className="container ">
+    <SectionContainer id="services" className="container ">
       <SectionHeading title="Our Services" />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {servicesData.map((service, index) => (
           <Link
             href={service.slug}
             key={index}
-            className=" p-6 rounded-2xl shadow-xl border"
+            className=" p-6 rounded-2xl shadow-xl border border-primary/5"
+            data-aos="fade-up"
           >
-            <h3 className="text-xl font-semibold text-primary">
+            <h3 className="text-xl font-semibold text-primary h-10">
               {service.title}
             </h3>
           </Link>

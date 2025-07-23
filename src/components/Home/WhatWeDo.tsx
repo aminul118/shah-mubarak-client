@@ -65,7 +65,7 @@ const services = [
 
 const WhatWeDo = () => {
   return (
-    <SectionContainer id="features" className="container">
+    <SectionContainer id="about" className="container">
       <SectionHeading
         title="What We Do"
         description=" Shah Mubaruk offers tailored consulting services to help your business grow, adapt, and thrive in a dynamic environment."

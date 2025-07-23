@@ -7,17 +7,13 @@ import { useState } from "react";
 
 const navItems = [
   {
-    title: "Features",
-    href: "/#features",
-  },
-  {
     title: "About",
     href: "/#about",
   },
 
   {
-    title: "Activities",
-    href: "/#activities",
+    title: "Services",
+    href: "/#services",
   },
   {
     title: "Team",
