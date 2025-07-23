@@ -1,9 +1,14 @@
+import ComingSoon from "@/components/Coming/ComingSoon";
 import React from "react";
 
 const BlogsPage = () => {
   return (
-    <div className="h-screen flex flex-col justify-center items-center">
-      <h1 className="text-primary">Coming..</h1>
+    <div>
+      <ComingSoon
+        description=" We're working hard to bring you our  blog services.
+          Stay tuned for strategic insights and expert guidance tailored for
+          your success."
+      />
     </div>
   );
 };
