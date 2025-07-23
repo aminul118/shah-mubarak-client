@@ -7,43 +7,24 @@ const footerSections = [
     links: [
       {
         label: "About Us",
-        href: "/about",
+        href: "/#about",
       },
       {
-        label: "Careers",
-        href: "/careers",
+        label: "Services",
+        href: "/#services",
+      },
+
+      {
+        label: "Team",
+        href: "/#team",
       },
       {
-        label: "Press",
-        href: "/press",
-      },
-      {
-        label: "Blog",
-        href: "/blog",
+        label: "Blogs",
+        href: "/blogs",
       },
     ],
   },
-  {
-    title: "Investors",
-    links: [
-      {
-        label: "Investment Overview",
-        href: "/investors/overview",
-      },
-      {
-        label: "Financial Reports",
-        href: "/investors/reports",
-      },
-      {
-        label: "Investor Relations",
-        href: "/investors/relations",
-      },
-      {
-        label: "Contact IR",
-        href: "/investors/contact",
-      },
-    ],
-  },
+
   {
     title: "Legal",
     links: [
@@ -55,14 +36,6 @@ const footerSections = [
         label: "Terms of Service",
         href: "/legal/terms",
       },
-      {
-        label: "Security",
-        href: "/legal/security",
-      },
-      {
-        label: "Compliance",
-        href: "/legal/compliance",
-      },
     ],
   },
 ];
@@ -71,13 +44,13 @@ export default function Footer() {
   return (
     <footer className="bg-[#1C2B3A] text-white">
       <Card className="border-none bg-[#1C2B3A] shadow-none">
-        <CardContent className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
+        <CardContent className="container  mx-auto px-6 py-16 flex flex-col lg:flex-row justify-between gap-10 text-sm">
           {/* Logo + Description */}
           <div>
-            <h2 className="text-primary  text-2xl font-bold mb-4">
+            <h2 className="text-primary text-2xl font-bold mb-4">
               Shah Mubarak
             </h2>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground max-w-96">
               Revolutionizing financial technology for businesses and
               individuals worldwide.
             </p>
