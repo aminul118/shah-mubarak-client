@@ -77,7 +77,7 @@ export default function Footer() {
       </Card>
 
       {/* Bottom Bar */}
-      <div className="border-t border-[#2D3E50] text-muted-foreground text-xs px-6 py-6 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div className="border-t border-[#2D3E50] text-muted-foreground text-xs px-6 py-6  mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <p>
           {new Date().getFullYear()} TabEdge. All rights reserved. Investment
           opportunities subject to qualification and regulatory approval.
