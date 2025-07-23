@@ -1,7 +1,7 @@
 import { MetaProps } from "@/types";
 import { Metadata } from "next";
 
-const baseUrl = "https://shahmubaruk.com";
+const baseUrl = "https://www.a1-lifts.com";
 
 export const generateMetaTags = ({
   title,
@@ -28,7 +28,7 @@ export const generateMetaTags = ({
     twitter: {
       card: "summary_large_image",
       site: "@a1lifts",
-      creator: "@shahmubaruk",
+      creator: "@a1liftsandengineering",
       title,
       description,
       images: image,
@@ -44,7 +44,7 @@ export const generateMetaTags = ({
     manifest: "/manifest.webmanifest",
     authors: [
       {
-        name: "shahmubaruk",
+        name: "Md. Abdul Motaleb",
         // url: "http://www.shrlbd.com/team/675663806e9379ed3c2a6f99",
       },
     ],
