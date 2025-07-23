@@ -52,7 +52,10 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="max-w-lg w-full mx-auto sm:p-6 lg:p-8">
+    <div
+      className="max-w-lg w-full mx-auto sm:p-6 lg:p-8"
+      data-aos="fade-right"
+    >
       <h2 className="text-2xl font-bold text-center mb-6 text-primary">
         Contact Us
       </h2>

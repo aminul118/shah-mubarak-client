@@ -41,9 +41,9 @@ const Navbar = () => {
       {/* Left: Logo */}
       <div className="flex items-center space-x-2">
         <div className="bg-green-600 p-2 rounded-xl"></div>
-        <span className="text-green-500 font-semibold text-xl">
+        <Link href="/" className="text-green-500 font-semibold text-xl">
           Shah Mubarak
-        </span>
+        </Link>
       </div>
 
       {/* Middle: Nav Links (Desktop) */}
@@ -59,9 +59,10 @@ const Navbar = () => {
 
       {/* Right: Button (Desktop) */}
       <div className="hidden md:block">
-        <Button className="bg-green-600 hover:bg-green-700 text-white font-semibold">
-          Invest Now
-        </Button>
+        <Link href="/login">
+          {" "}
+          <Button>lOGIN</Button>
+        </Link>
       </div>
 
       {/* Mobile Menu Icon */}
@@ -84,12 +85,9 @@ const Navbar = () => {
               {title}
             </Link>
           ))}
-          <Button
-            className="bg-green-600 hover:bg-green-700 text-white font-semibold"
-            onClick={() => setMenuOpen(false)}
-          >
-            Invest Now
-          </Button>
+          <Link href="/login">
+            <Button onClick={() => setMenuOpen(false)}>Login</Button>
+          </Link>
         </div>
       )}
     </nav>

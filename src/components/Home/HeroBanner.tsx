@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import HeroText from "./HeroText";
+import { Button } from "../ui/button";
 
 const partners = [
   { name: "CONSULTICA", color: "text-orange-400 italic" },
@@ -22,17 +23,11 @@ export default function HeroBanner() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <Link
-              href="#"
-              className="bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded-md text-white font-semibold"
-            >
-              Schedule A Consultation
+            <Link href="#">
+              <Button>Schedule A Consultation</Button>
             </Link>
-            <Link
-              href="#"
-              className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition px-6 py-3 rounded-md font-semibold"
-            >
-              Contact Us
+            <Link href="/#contact">
+              <Button variant="outline">Contact Us</Button>
             </Link>
           </div>
 

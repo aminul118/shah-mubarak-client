@@ -4,7 +4,6 @@ const servicesData = [
     slug: "investment-planning",
     description: [
       "At Shah Mubaruk Business Consulting, we understand the importance of sound financial strategies for long-term success. Our Investment Planning Service is tailored to help businesses and individuals make informed decisions to grow and safeguard their wealth. With a keen eye on market trends and a thorough understanding of your unique financial landscape, Shah Mubaruk offers personalized investment plans that align with your goals and risk tolerance. Whether you're looking to build wealth, plan for retirement, or optimize your portfolio, our expert consultants provide comprehensive guidance to navigate the complexities of the financial market. Trust Shah Mubaruk for strategic investment planning that empowers you to secure a prosperous financial future.",
-      "At Shah Mubaruk Business Consulting, we understand the importance of sound financial strategies for long-term success. Our Investment Planning Service is tailored to help businesses and individuals make informed decisions to grow and safeguard their wealth. With a keen eye on market trends and a thorough understanding of your unique financial landscape, Shah Mubaruk offers personalized investment plans that align with your goals and risk tolerance. Whether you're looking to build wealth, plan for retirement, or optimize your portfolio, our expert consultants provide comprehensive guidance to navigate the complexities of the financial market. Trust Shah Mubaruk for strategic investment planning that empowers you to secure a prosperous financial future.",
     ],
   },
   {
@@ -23,7 +22,7 @@ const servicesData = [
   },
   {
     title: "Discussion Of The Idea",
-    slug: "discussion-Of-the-idea",
+    slug: "discussion-of-the-idea",
     description: [
       "At Shah Mubaruk Business Consulting, we recognize that every great venture begins with a compelling idea. Our 'Discussion of the Idea' service is crafted to be your starting point on the path to success. Shah Mubaruk's expert consultants engage in in-depth discussions with you to explore, refine, and crystallize your business concept. Through collaborative brainstorming sessions, we dissect the core elements of your idea, identify potential challenges, and uncover innovative solutions. Trust Shah Mubaruk to be your strategic partner in transforming your vision into a well-defined and actionable plan. Choose our 'Discussion of the Idea' service for the crucial first steps towards realizing your entrepreneurial dreams.",
     ],
@@ -40,6 +39,27 @@ const servicesData = [
     slug: "support-startup",
     description: [
       "At Shah Mubaruk Business Consulting, we believe in nurturing the seeds of innovation. Our 'Support Startup' service is dedicated to providing comprehensive assistance to emerging businesses, guiding them through the crucial phases of inception and growth. With a team of seasoned consultants, Shah Mubaruk offers hands-on support in business planning, market entry strategies, financial structuring, and operational efficiency. Our tailored approach recognizes the unique challenges startups face and provides strategic solutions to pave the way for success. Choose Shah Mubaruk's 'Support Startup' service to benefit from expert guidance and propel your entrepreneurial vision into a thriving reality.",
+    ],
+  },
+  {
+    title: "Company Formation",
+    slug: "company-formation",
+    description: [
+      "At Shah Mubaruk Business Consulting, we understand the importance of a strong foundation for your business journey. Our 'Company Formation' service is meticulously crafted to streamline the process of bringing your vision to life. Shah Mubaruk's expert consultants guide you through the intricacies of company formation, offering comprehensive support in legal compliance, registration processes, and structuring. We tailor our services to align with your specific business goals, ensuring a smooth and efficient establishment. Trust Shah Mubaruk to be your partner in laying the groundwork for success. Choose our 'Company Formation' service for a seamless start to your entrepreneurial venture.",
+    ],
+  },
+  {
+    title: "US Formation for Non-US Persons",
+    slug: "us-formation",
+    description: [
+      "At Shah Mubaruk Business Consulting, we specialize in facilitating international entrepreneurs on their journey to establish a robust presence in the United States. Our 'US Formation Service for Non-US Persons' is designed to seamlessly navigate the complexities of company setup, allowing you to own and operate a business in the U.S. As part of our comprehensive service, we ensure access to essential financial tools with the provision of a US bank account, PayPal, and Stripe account. Trust Shah Mubaruk to guide you through legal compliance, registration procedures, and financial integration, providing a turnkey solution for non-US individuals aspiring to thrive in the American market. Choose our service for a strategic and hassle-free entry into the U.S. business landscape.",
+    ],
+  },
+  {
+    title: "Fund Raising Service",
+    slug: "fund-raising",
+    description: [
+      "At Shah Mubaruk Business Consulting, we understand that securing adequate funding is crucial for business growth. Our Fundraising Service is tailored to guide you through the intricacies of capital acquisition. Shah Mubaruk's expert consultants leverage their extensive experience to help you identify suitable funding sources, craft compelling pitches, and develop strategic fundraising campaigns. Whether you're a startup seeking initial capital or an established business aiming for expansion, our dedicated service is designed to maximize your fundraising potential. Trust Shah Mubaruk to navigate the diverse landscape of funding options, providing the expertise needed to turn your financial goals into reality. Choose our Fundraising Service for a strategic and effective approach to securing the resources your business needs to thrive.",
     ],
   },
 ];

@@ -35,7 +35,11 @@ const StatsSection = () => {
     <section className="bg-[#032B46] py-16 px-4">
       <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
         {stats.map(({ id, icon: Icon, value, label }) => (
-          <div key={id} className="flex flex-col items-center space-y-4">
+          <div
+            data-aos="fade-up"
+            key={id}
+            className="flex flex-col items-center space-y-4"
+          >
             <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center">
               <Icon className="w-10 h-10 text-[#032B46]" />
             </div>

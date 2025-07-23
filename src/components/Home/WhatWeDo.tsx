@@ -65,7 +65,7 @@ const services = [
 
 const WhatWeDo = () => {
   return (
-    <SectionContainer id='features' className="container">
+    <SectionContainer id="features" className="container">
       <SectionHeading
         title="What We Do"
         description=" Shah Mubaruk offers tailored consulting services to help your business grow, adapt, and thrive in a dynamic environment."
@@ -74,6 +74,7 @@ const WhatWeDo = () => {
       <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {services.map((service, idx) => (
           <Card
+            data-aos="fade-up"
             key={idx}
             className=" hover:shadow-xl bg-black/70 transition-shadow duration-300 h-full"
           >

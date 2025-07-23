@@ -17,7 +17,7 @@ const FAQ = () => {
 
       <div className="grid sm:grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
         {/* FAQ Image */}
-        <div className="mx-auto">
+        <div className="mx-auto" data-aos="fade-up">
           <Image
             src={"/logos/FAQ.png"}
             width={500}
@@ -28,7 +28,7 @@ const FAQ = () => {
         </div>
 
         {/* Accordion Content */}
-        <div className="max-w-xl w-full text-primary">
+        <div className="max-w-xl w-full text-primary" data-aos="fade-up">
           <Accordion type="single" collapsible className="space-y-4 ">
             {faqData.map((item) => (
               <AccordionItem key={item.value} value={item.value}>
