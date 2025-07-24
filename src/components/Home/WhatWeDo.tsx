@@ -11,6 +11,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import SectionHeading from "../ui/SectionHeading";
 import SectionContainer from "../ui/SectionContainer";
+import BookConsultation from "../Shared/BookConsultation";
 
 const services = [
   {
@@ -65,13 +66,14 @@ const services = [
 
 const WhatWeDo = () => {
   return (
-    <SectionContainer className="container">
+    <SectionContainer id="what-we-do" className="container">
       <SectionHeading
         title="What We Do"
         description=" Shah Mubaruk offers tailored consulting services to help your business grow, adapt, and thrive in a dynamic environment."
       />
+      <BookConsultation />
 
-      <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-24">
         {services.map((service, idx) => (
           <Card
             data-aos="fade-up"

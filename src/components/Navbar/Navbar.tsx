@@ -1,5 +1,4 @@
 "use client";
-
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -10,11 +9,16 @@ const navItems = [
     title: "About",
     href: "/#about",
   },
+  {
+    title: "What we do",
+    href: "/#what-we-do",
+  },
 
   {
     title: "Services",
     href: "/#services",
   },
+
   {
     title: "Team",
     href: "/#team",
@@ -56,8 +60,7 @@ const Navbar = () => {
       {/* Right: Button (Desktop) */}
       <div className="hidden md:block">
         <Link href="/login">
-          {" "}
-          <Button>lOGIN</Button>
+          <Button>Login</Button>
         </Link>
       </div>
 
