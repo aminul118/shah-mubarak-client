@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 
-const BookConsultation = () => {
+const BookConsultation = ({ className }: { className?: string }) => {
   return (
     <div>
-      <div className="flex flex-wrap gap-4 text-primary justify-center">
+      <div
+        className={`flex flex-wrap gap-4 text-primary justify-center ${className}`}
+      >
         <Link href="/consultation">
           <Button>Schedule A Consultation</Button>
         </Link>
