@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
@@ -12,13 +13,14 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import axios from "axios";
 
 // Zod Schema
 const consultationSchema = z.object({
   name: z.string().min(3, "Name is required"),
   email: z.string().email("Invalid email address"),
   phone: z.string().min(8, "Phone number is required"),
-  scheduleDate: z.string(), // will be formatted to ISO later
+  scheduleDate: z.string(),
   subject: z.string().min(3, "Subject is required"),
   message: z.string().min(5, "Message is required"),
 });
@@ -45,28 +47,34 @@ const ConsultationPage = () => {
 
   const onSubmit = async (data: ConsultationFormData) => {
     try {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_API}/schedule/create`,
+      const payload = {
+        ...data,
+        scheduleDate: new Date(data.scheduleDate).toISOString(),
+      };
+
+      const response = await axios.post(
+        `https://api.shahmubaruk.com/api/v1/schedule/create`,
+        payload,
         {
-          method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({
-            ...data,
-            scheduleDate: new Date(data.scheduleDate).toISOString(),
-          }),
         }
       );
-      console.log(response);
-      if (!response.ok) {
+      console.log("RESPONSE-->", response);
+
+      if (response.status !== 200 && response.status !== 201) {
         throw new Error("Failed to submit");
       }
 
       toast.success("Consultation request submitted!");
       reset();
-    } catch (error) {
-      toast.error("Something went wrong while submitting the form.");
+    } catch (error: any) {
+      console.error("Submission error:", error);
+      toast.error(
+        error?.response?.data?.message ||
+          "Something went wrong while submitting the form."
+      );
     }
   };
 
