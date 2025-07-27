@@ -1,4 +1,3 @@
-// components/ServiceCards.jsx
 import servicesData from "@/constants/servicesData";
 import Link from "next/link";
 import React from "react";

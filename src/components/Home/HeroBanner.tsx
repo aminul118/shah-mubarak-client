@@ -1,7 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import HeroText from "./HeroText";
-import { Button } from "../ui/button";
+import BookConsultation from "../Shared/BookConsultation";
 
 const partners = [
   { name: "CONSULTICA", color: "text-orange-400 italic" },
@@ -23,14 +22,7 @@ export default function HeroBanner() {
             to thrive in today’s dynamic market.
           </p>
 
-          <div className="flex flex-wrap gap-4">
-            <Link href="/consultation">
-              <Button>Schedule A Consultation</Button>
-            </Link>
-            <Link href="/#contact">
-              <Button variant="outline">Contact Us</Button>
-            </Link>
-          </div>
+          <BookConsultation className="justify-start" />
 
           {/* Partner Logos */}
           <div className="mt-10">
