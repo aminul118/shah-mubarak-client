@@ -26,7 +26,7 @@ interface GoogleCalendarButtonProps {
 const GoogleCalendarButton = ({
   targetId,
   color = "#039BE5",
-  label = "Book an appointment",
+  label = "Get a free Consultancy",
 }: GoogleCalendarButtonProps) => {
   useEffect(() => {
     const link = document.createElement("link");

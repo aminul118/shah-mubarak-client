@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import GoogleCalendarButton from "../Shared/GoogleCalender";
 
 const navItems = [
   {
@@ -58,7 +59,8 @@ const Navbar = () => {
       </ul>
 
       {/* Right: Button (Desktop) */}
-      <div className="hidden md:block">
+      <div className="hidden md:block space-x-2.5">
+        <GoogleCalendarButton targetId="google-clander-button" />
         <Link href="/login">
           <Button>Login</Button>
         </Link>
