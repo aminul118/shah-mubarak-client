@@ -29,14 +29,13 @@ const ContactForm: React.FC = () => {
     formState: { errors },
   } = useForm<IFormInput>();
 
-  const onSubmit: SubmitHandler<IFormInput> = async (data) => {
+  const onSubmit: SubmitHandler<IFormInput> = async (payload) => {
     setLoading(true);
     try {
       // Send form data to the backend using Axios
       const response = await axios.post(
-        "https://data.tabedge.com/v1/contact/create",
-        data,
-        { headers: { "Content-Type": "application/json" } }
+        `https://api.shahmubaruk.com/api/v1/contact/create`,
+        payload
       );
 
       console.log("Response:", response.data);
