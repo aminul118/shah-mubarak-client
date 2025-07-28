@@ -2,6 +2,7 @@ import ContactUs from "@/components/ContactUs/ContactUs";
 import About from "@/components/Home/About";
 import FAQ from "@/components/Home/FAQ";
 import HeroBanner from "@/components/Home/HeroBanner";
+import NewsLetterSubscription from "@/components/Home/NewsLetterSubscription";
 import ServiceCards from "@/components/Home/ServicesCards";
 import StatsSection from "@/components/Home/StatsSection";
 import Team from "@/components/Home/Team";
@@ -34,6 +35,7 @@ const HomePage = () => {
       <Team />
       <FAQ />
       <ContactUs />
+      <NewsLetterSubscription />
     </>
   );
 };
