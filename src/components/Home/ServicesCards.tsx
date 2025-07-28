@@ -23,7 +23,10 @@ const ServiceCards = () => {
           </Link>
         ))}
       </div>
-      <BookConsultation className="mt-12 2xl:mt-24" />
+      <BookConsultation
+        targetId="calendar-button-3"
+        className="mt-12 2xl:mt-24"
+      />
     </SectionContainer>
   );
 };

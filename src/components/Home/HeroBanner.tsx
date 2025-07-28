@@ -22,7 +22,10 @@ export default function HeroBanner() {
             to thrive in today’s dynamic market.
           </p>
 
-          <BookConsultation className="justify-start" />
+          <BookConsultation
+            targetId="calendar-button-1"
+            className="justify-start"
+          />
 
           {/* Partner Logos */}
           <div className="mt-10">
