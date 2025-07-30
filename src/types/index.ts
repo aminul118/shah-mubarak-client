@@ -21,3 +21,10 @@ export type Routes = {
   changeFrequency: "daily" | "weekly" | "monthly" | "yearly";
   priority: number;
 };
+
+export interface ApiResponse<T> {
+  statusCode: number;
+  success: boolean;
+  message: string;
+  data: T;
+}
