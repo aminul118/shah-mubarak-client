@@ -27,7 +27,7 @@ const BlogsPage = () => {
     const fetchBlogs = async () => {
       try {
         const { data } = await axios.get<ApiResponse<IBlog[]>>(
-          "https://api.shahmubaruk.com/api/v1/blog/all-blogs"
+          "https://api.shahmubaruk.com/api/v1/blog/all-blogs",
         );
         setBlogs(data);
       } catch (error) {

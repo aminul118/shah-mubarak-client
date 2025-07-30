@@ -4,7 +4,10 @@ import SectionHeading from "../ui/SectionHeading";
 
 const ContactUs = () => {
   return (
-    <div id="contact" className="relative px-4 sm:px-6 lg:px-12 py-6 lg:py-12 2xl:py-24 bg-[url('/assets/background/white-polyshape.jpg')] bg-cover bg-center bg-opacity-50">
+    <div
+      id="contact"
+      className="relative px-4 sm:px-6 lg:px-12 py-6 lg:py-12 2xl:py-24 bg-[url('/assets/background/white-polyshape.jpg')] bg-cover bg-center bg-opacity-50"
+    >
       {/* Optional Gradient Overlay */}
       {/* <div className="absolute inset-0 bg-gradient-to-b from-[#f2f4f8] to-blue-900 opacity-40"></div> */}
 

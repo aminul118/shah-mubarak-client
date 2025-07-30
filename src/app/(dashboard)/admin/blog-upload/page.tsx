@@ -37,7 +37,7 @@ const BlogPage = () => {
 
       await axios.post(
         "https://api.shahmubaruk.com/api/v1/blog/create",
-        payload
+        payload,
       );
 
       toast.success("Blog saved successfully!");

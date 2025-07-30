@@ -35,7 +35,7 @@ const ContactForm: React.FC = () => {
       // Send form data to the backend using Axios
       const response = await axios.post(
         `https://api.shahmubaruk.com/api/v1/contact/create`,
-        payload
+        payload,
       );
 
       console.log("Response:", response.data);

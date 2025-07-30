@@ -59,7 +59,7 @@ const ConsultationPage = () => {
           headers: {
             "Content-Type": "application/json",
           },
-        }
+        },
       );
       console.log("RESPONSE-->", response);
 
@@ -73,7 +73,7 @@ const ConsultationPage = () => {
       console.error("Submission error:", error);
       toast.error(
         error?.response?.data?.message ||
-          "Something went wrong while submitting the form."
+          "Something went wrong while submitting the form.",
       );
     }
   };

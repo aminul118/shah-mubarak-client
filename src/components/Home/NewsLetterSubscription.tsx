@@ -23,7 +23,7 @@ const NewsLetterSubscription = () => {
       setLoading(true);
       const res = await axios.post(
         "https://api.shahmubaruk.com/api/v1/subscription/create",
-        { email }
+        { email },
       );
       toast.success(res?.data?.message || "Subscribed successfully!");
       setEmail("");
