@@ -2,16 +2,25 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Link from "next/link";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ApiResponse } from "@/types";
 
 interface IBlog {
   _id: string;
   title: string;
+  slug: string;
   category: string;
   content: string;
   createdAt: Date;
   updatedAt: Date;
+}
+
+function stripHtml(html: string): string {
+  if (!html) return "";
+  const tmp = document.createElement("div");
+  tmp.innerHTML = html;
+  return tmp.textContent || tmp.innerText || "";
 }
 
 const BlogsPage = () => {
@@ -49,9 +58,8 @@ const BlogsPage = () => {
 
       <Tabs
         defaultValue="blogs"
-        className="grid lg:grid-cols-12 gap-6 text-white "
+        className="grid lg:grid-cols-12 gap-6 text-white"
       >
-        {/* Sidebar for categories */}
         <div className="col-span-3">
           <TabsList className="flex flex-col gap-4 bg-gray-900 rounded-lg">
             <TabsTrigger value="blogs">All Blogs</TabsTrigger>
@@ -64,21 +72,33 @@ const BlogsPage = () => {
           </TabsList>
         </div>
 
-        {/* Main content */}
         <div className="col-span-9">
           <TabsContent value="blogs" className="space-y-6">
             {blogs?.data?.length === 0 ? (
               <p className="text-center text-gray-400">No blogs available</p>
             ) : (
-              blogs.data.map((blog) => (
-                <div
-                  key={blog._id}
-                  className="bg-gray-800 p-6 rounded-lg text-white space-y-4 shadow"
-                >
-                  <h1 className="text-2xl font-semibold">{blog.title}</h1>
-                  <div dangerouslySetInnerHTML={{ __html: blog.content }} />
-                </div>
-              ))
+              <div className="grid lg:grid-cols-3 gap-6">
+                {blogs.data.map((blog) => {
+                  const previewText = stripHtml(blog.content).slice(0, 100);
+                  return (
+                    <div
+                      key={blog._id}
+                      className="bg-gray-800 p-6 rounded-lg text-white space-y-4 shadow flex flex-col justify-between"
+                    >
+                      <div className="space-y-3">
+                        <h1 className="text-2xl font-semibold">{blog.title}</h1>
+                        <p>{previewText}...</p>
+                      </div>
+                      <Link
+                        href={`/blogs/${blog.slug}`}
+                        className="inline-block mt-2 text-blue-400 hover:underline"
+                      >
+                        Read More
+                      </Link>
+                    </div>
+                  );
+                })}
+              </div>
             )}
           </TabsContent>
 
