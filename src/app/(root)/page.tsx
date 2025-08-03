@@ -1,13 +1,13 @@
-import ContactUs from "@/components/ContactUs/ContactUs";
-import About from "@/components/Home/About";
-import FAQ from "@/components/Home/FAQ";
-import HeroBanner from "@/components/Home/HeroBanner";
-import NewsLetterSubscription from "@/components/Home/NewsLetterSubscription";
-import ServiceCards from "@/components/Home/ServicesCards";
-import StatsSection from "@/components/Home/StatsSection";
-import Team from "@/components/Home/Team";
-import WhatWeDo from "@/components/Home/WhatWeDo";
-import WhyShahMubarak from "@/components/Home/WhyShahMubarak";
+import ContactUs from "@/components/modules/ContactUs/ContactUs";
+import About from "@/components/modules/Home/About";
+import FAQ from "@/components/modules/Home/FAQ";
+import HeroBanner from "@/components/modules/Home/HeroBanner";
+import NewsLetterSubscription from "@/components/modules/Home/NewsLetterSubscription";
+import ServiceCards from "@/components/modules/Home/ServicesCards";
+import StatsSection from "@/components/modules/Home/StatsSection";
+import Team from "@/components/modules/Home/Team";
+import WhatWeDo from "@/components/modules/Home/WhatWeDo";
+import WhyShahMubarak from "@/components/modules/Home/WhyShahMubarak";
 import { generateMetaTags } from "@/Seo/genarateMetaTags";
 import { Metadata } from "next";
 

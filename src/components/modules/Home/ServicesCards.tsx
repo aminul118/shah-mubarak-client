@@ -1,9 +1,9 @@
+import BookConsultation from "@/components/Shared/BookConsultation";
+import SectionContainer from "@/components/ui/SectionContainer";
+import SectionHeading from "@/components/ui/SectionHeading";
 import servicesData from "@/constants/servicesData";
 import Link from "next/link";
 import React from "react";
-import SectionHeading from "../ui/SectionHeading";
-import SectionContainer from "../ui/SectionContainer";
-import BookConsultation from "../Shared/BookConsultation";
 
 const ServiceCards = () => {
   return (

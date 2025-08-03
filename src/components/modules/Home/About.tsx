@@ -1,6 +1,6 @@
+import SectionContainer from "@/components/ui/SectionContainer";
+import SectionHeading from "@/components/ui/SectionHeading";
 import React from "react";
-import SectionContainer from "../ui/SectionContainer";
-import SectionHeading from "../ui/SectionHeading";
 
 const About = () => {
   return (

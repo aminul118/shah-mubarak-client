@@ -5,10 +5,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import SectionHeading from "../ui/SectionHeading";
-import SectionContainer from "../ui/SectionContainer";
+
 import Image from "next/image";
 import { faqData } from "@/constants/faqData";
+import SectionContainer from "@/components/ui/SectionContainer";
+import SectionHeading from "@/components/ui/SectionHeading";
 
 const FAQ = () => {
   return (

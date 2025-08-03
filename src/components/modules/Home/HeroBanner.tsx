@@ -1,6 +1,6 @@
 import Image from "next/image";
 import HeroText from "./HeroText";
-import BookConsultation from "../Shared/BookConsultation";
+import BookConsultation from "@/components/Shared/BookConsultation";
 
 const partners = [
   { name: "CONSULTICA", color: "text-orange-400 italic" },

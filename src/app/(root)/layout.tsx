@@ -1,5 +1,6 @@
-import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/layouts/Footer/Footer";
+import Navbar from "@/components/layouts/Navbar/Navbar";
+
 import { generateMetaTags } from "@/Seo/genarateMetaTags";
 import { Children } from "@/types";
 import { Metadata } from "next";
@@ -18,9 +19,9 @@ export const metadata: Metadata = generateMetaTags({
 
 const RootLayout = ({ children }: Children) => {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="min-h-[calc(100vh-464px)]">{children}</div>
+      <div className="grow-1">{children}</div>
       <Footer />
     </div>
   );

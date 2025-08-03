@@ -32,7 +32,7 @@ const BlogDetailsPage = async ({ params }: Params) => {
       <Card className="flex flex-col justify-center items-center p-6 space-y-4">
         <h1 className="text-2xl font-bold">{blog.title}</h1>
         <div
-          className="text-gray-600 w-full"
+          className="text-primary/80 w-full"
           dangerouslySetInnerHTML={{ __html: blog.content }}
         />
       </Card>

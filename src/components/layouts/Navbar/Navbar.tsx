@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import GoogleCalendarButton from "../Shared/GoogleCalender";
+import GoogleCalendarButton from "@/components/Shared/GoogleCalender";
 
 const navItems = [
   {

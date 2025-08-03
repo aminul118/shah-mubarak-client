@@ -9,9 +9,9 @@ import {
   Laptop,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import SectionHeading from "../ui/SectionHeading";
-import SectionContainer from "../ui/SectionContainer";
-import BookConsultation from "../Shared/BookConsultation";
+import SectionContainer from "@/components/ui/SectionContainer";
+import SectionHeading from "@/components/ui/SectionHeading";
+import BookConsultation from "@/components/Shared/BookConsultation";
 
 const services = [
   {

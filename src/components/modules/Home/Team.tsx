@@ -2,8 +2,8 @@
 import Image from "next/image";
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import SectionContainer from "../ui/SectionContainer";
-import SectionHeading from "../ui/SectionHeading";
+import SectionContainer from "@/components/ui/SectionContainer";
+import SectionHeading from "@/components/ui/SectionHeading";
 
 const teamMembers = [
   {

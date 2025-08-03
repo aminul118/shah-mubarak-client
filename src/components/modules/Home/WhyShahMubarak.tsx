@@ -1,7 +1,7 @@
+import SectionContainer from "@/components/ui/SectionContainer";
 import React from "react";
 import { RiSecurePaymentLine, RiBankLine } from "react-icons/ri";
 import { TbLicense } from "react-icons/tb";
-import SectionContainer from "../ui/SectionContainer";
 
 const features = [
   {
